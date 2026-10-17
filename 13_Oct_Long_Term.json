@@ -1,0 +1,999 @@
+{
+  "name": "DemandEdgeForecastingConfigDeepMetaRRHI",
+  "type": "MixAndMatchV2",
+  "displayName": "DemandEdgeForecastingConfigDeepMetaRRHILongterm",
+  "description": "RRHI DemandEdge MixAndMatch V2 Actor configuration for Demand Forecasting. Contains extensions which cannot be displayed in the UI.",
+  "scope": {
+    "dimensions": [
+      {
+        "name": "ITEM",
+        "hierarchy": {
+          "name": "RRHI_ITEM_HIERARCHY_C",
+          "levels": [
+            {
+              "name": "SUBDEPARTMENT"
+            },
+            {
+              "name": "CLASS"
+            },
+            {
+              "name": "SUBCLASS"
+            },
+            {
+              "name": "STYLE"
+            },
+            {
+              "name": "ITEM",
+              "selectedAttributes": [
+                {
+                  "name": "BRAND"
+                },
+                {
+                  "name": "COLORID"
+                },
+                {
+                  "name": "CONSUMERSEGMENT"
+                },
+                {
+                  "name": "DESCRIPTIONITEM"
+                },
+                {
+                  "name": "ITEMCLASS"
+                },
+                {
+                  "name": "ITEMSEASON"
+                },
+                {
+                  "name": "ITEMSTYLE"
+                },
+                {
+                  "name": "METAITEMID"
+                },
+                {
+                  "name": "QUALITY"
+                },
+                {
+                  "name": "RANK"
+                },
+                {
+                  "name": "SIZE"
+                },
+                {
+                  "name": "COLOURDESCRIPTION"
+                },
+                {
+                  "name": "MATERIAL"
+                },
+                {
+                  "name": "SALESCLASSIFICATION"
+                },
+                {
+                  "name": "SUSTAINABILITY"
+                }
+              ],
+              "aliases": [
+                {
+                  "name": "BRAND",
+                  "type": "PROPERTY",
+                  "aliasName": "BRAND"
+                },
+                {
+                  "name": "COLORID",
+                  "type": "PROPERTY",
+                  "aliasName": "COLORID"
+                },
+                {
+                  "name": "CONSUMERSEGMENT",
+                  "type": "PROPERTY",
+                  "aliasName": "CONSUMERSEGMENT"
+                },
+                {
+                  "name": "DESCRIPTIONITEM",
+                  "type": "PROPERTY",
+                  "aliasName": "DESCRIPTIONITEM"
+                },
+                {
+                  "name": "ITEMCLASS",
+                  "type": "PROPERTY",
+                  "aliasName": "ITEMCLASS"
+                },
+                {
+                  "name": "ITEMSEASON",
+                  "type": "PROPERTY",
+                  "aliasName": "ITEMSEASON"
+                },
+                {
+                  "name": "ITEMSTYLE",
+                  "type": "PROPERTY",
+                  "aliasName": "ITEMSTYLE"
+                },
+                {
+                  "name": "METAITEMID",
+                  "type": "PROPERTY",
+                  "aliasName": "METAITEMID"
+                },
+                {
+                  "name": "QUALITY",
+                  "type": "PROPERTY",
+                  "aliasName": "QUALITY"
+                },
+                {
+                  "name": "RANK",
+                  "type": "PROPERTY",
+                  "aliasName": "RANK"
+                },
+                {
+                  "name": "SIZE",
+                  "type": "PROPERTY",
+                  "aliasName": "SIZE"
+                },
+                {
+                  "name": "COLOURDESCRIPTION",
+                  "type": "PROPERTY",
+                  "aliasName": "COLOURDESCRIPTION"
+                },
+                {
+                  "name": "MATERIAL",
+                  "type": "PROPERTY",
+                  "aliasName": "MATERIAL"
+                },
+                {
+                  "name": "SALESCLASSIFICATION",
+                  "type": "PROPERTY",
+                  "aliasName": "SALESCLASSIFICATION"
+                },
+                {
+                  "name": "SUSTAINABILITY",
+                  "type": "PROPERTY",
+                  "aliasName": "SUSTAINABILITY"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "LOCATION",
+        "hierarchy": {
+          "name": "RRHI_LOC_HIERARCHY",
+          "levels": [
+            {
+              "name": "COUNTRY"
+            },
+            {
+              "name": "CHANNEL"
+            },
+            {
+              "name": "LOCATION",
+              "selectedAttributes": [
+                {
+                  "name": "BANNER"
+                },
+                {
+                  "name": "FORMAT"
+                },
+                {
+                  "name": "COUNTRYCODE"
+                },
+                {
+                  "name": "LATITUDE"
+                },
+                {
+                  "name": "LONGITUDE"
+                },
+                {
+                  "name": "CITY"
+                },
+                {
+                  "name": "METALOCATIONID"
+                },
+                {
+                  "name": "OPENDATE"
+                },
+                {
+                  "name": "TYPELOCATION"
+                }
+              ],
+              "aliases": [
+                {
+                  "name": "BANNER",
+                  "type": "PROPERTY",
+                  "aliasName": "BANNER"
+                },
+                {
+                  "name": "FORMAT",
+                  "type": "PROPERTY",
+                  "aliasName": "FORMAT"
+                },
+                {
+                  "name": "COUNTRYCODE",
+                  "type": "PROPERTY",
+                  "aliasName": "COUNTRYCODE"
+                },
+                {
+                  "name": "LATITUDE",
+                  "type": "PROPERTY",
+                  "aliasName": "LATITUDE"
+                },
+                {
+                  "name": "LONGITUDE",
+                  "type": "PROPERTY",
+                  "aliasName": "LONGITUDE"
+                },
+                {
+                  "name": "CITY",
+                  "type": "PROPERTY",
+                  "aliasName": "CITY"
+                },
+                {
+                  "name": "METALOCATIONID",
+                  "type": "PROPERTY",
+                  "aliasName": "METALOCATIONID"
+                },
+                {
+                  "name": "OPENDATE",
+                  "type": "PROPERTY",
+                  "aliasName": "OPENDATE"
+                },
+                {
+                  "name": "TYPELOCATION",
+                  "type": "PROPERTY",
+                  "aliasName": "TYPELOCATION"
+                }
+              ]
+            }
+          ]
+        },
+        "propertiesFilter": [
+          {
+            "levelId": "LOCATION",
+            "values": [
+              {
+                "name": "COUNTRYCODE",
+                "values": [
+                  "PHL"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "TIME",
+        "hierarchy": {
+          "name": "FISCALTIMEHIERARCHY",
+          "levels": [
+            {
+              "name": "DAY",
+              "selectedAttributes": [
+                {
+                  "name": "DAY_STARTDATE"
+                }
+              ],
+              "aliases": [
+                {
+                  "name": "DAY_STARTDATE",
+                  "type": "PROPERTY",
+                  "aliasName": "DAY_STARTDATE"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "name": "ITEMLOCATION"
+      },
+      {
+        "name": "LOCATIONNODE"
+      }
+    ],
+    "measureGroups": [
+      {
+        "name": "ITEM_LOCATION_DAILY_SALES",
+        "measures": [
+          "SALES_QUANTITY"
+        ]
+      },
+      {
+        "name": "ITEM_LOCATION_DAILY_PROMOTIONS",
+        "measures": [
+          "CURRENT_PRICE",
+          "DISCOUNT_PRICE_1"
+        ]
+      },
+      {
+        "name": "ITEM_LOCATION_DAILY_ASSIGNMENTS",
+        "measures": [
+          "ASSIGNMENT",
+          "IGNORE_SALE"
+        ]
+      },
+      {
+        "name": "LOCATION_DAILY_OPENINGHOURS",
+        "measures": [
+          "IS_OPEN",
+          "OPEN_HOURS"
+        ]
+      },
+      {
+        "name": "ITEM_LOCATION_DAILY_PRICES",
+        "measures": [
+          "CLEARANCE_PRICE",
+          "NORMAL_PRICE",
+          "REDUCED_PRICE"
+        ]
+      },
+      {
+        "name": "ITEM_LOCATION_DAILY_STOCKS",
+        "measures": [
+          "STOCKS_QUANTITY"
+        ]
+      },
+      {
+        "name": "ITEM_LOCATION_DAILY_FORECASTS",
+        "measures": [
+          "PRED_MEAN",
+          "PRED_VARIANCE",
+          "FCSTMODEL",
+          "SYSTEMIC_FORECAST"
+        ]
+      }
+    ]
+  },
+  "params": {},
+  "optionalParams": {
+    "realtime": [],
+    "realtimeExplainability": []
+  },
+  "extendedParams": {
+    "mixMatchConfigData": {
+      "horizon": {
+        "forecastPeriod": {
+          "startDate": {
+            "date": "current_date",
+            "offSet": {
+              "value": "0",
+              "timeResolution": "day"
+            }
+          },
+          "duration": {
+            "value": "365",
+            "timeResolution": "day"
+          }
+        },
+        "evaluationPeriod": {
+          "startDate": {
+            "date": "current_date",
+            "offSet": {
+              "value": "-91",
+              "timeResolution": "day"
+            }
+          },
+          "duration": {
+            "value": "90",
+            "timeResolution": "day"
+          }
+        },
+        "trainingPeriod": {
+          "startDate": {
+            "date": "current_date",
+            "offSet": {
+              "value": "-1001",
+              "timeResolution": "day"
+            }
+          },
+          "duration": {
+            "value": "1000",
+            "timeResolution": "day"
+          }
+        }
+      },
+      "createModel": {
+        "targetColumn": "SALES_QUANTITY",
+        "modelConfig": {
+          "modelType": "mix-and-match",
+          "mixerConfig": {
+            "metric": "MAD",
+            "evaluationStartTimestamp": "current_date",
+            "evaluationEndTimestamp": "-91",
+            "segmentColumns": [
+              "CLASS",
+              "LOCATION"
+            ],
+            "ignoreMarkerColumn": "IGNORE_SALE"
+          },
+          "subModelConfigs": [
+            {
+              "name": "deepmeta",
+              "config": {
+                "modelType": "deepmeta",
+                "meta_embeddings": [
+                  {
+                    "embedding_type": "feature",
+                    "name": "location_ic",
+                    "features": [
+                      {
+                        "feature_type": "categorical",
+                        "column": "CHANNEL"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "BANNER"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "CITY"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "COUNTRY"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "LONGITUDE"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "FORMAT"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "TYPELOCATION"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "LATITUDE"
+                      },
+                      {
+                        "feature_type": "numerical",
+                        "column": "OPEN_HOURS",
+                        "normalize_by": null,
+                        "min_value": null,
+                        "max_value": null,
+                        "nan_replace": null
+                      }
+                    ]
+                  },
+                  {
+                    "embedding_type": "feature",
+                    "name": "product_ic",
+                    "features": [
+                      {
+                        "feature_type": "categorical",
+                        "column": "METAITEMID"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "SUBCLASS"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "ITEMCLASS"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "CLASS"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "STYLE"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "BRAND"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "ITEMSEASON"
+                      },
+                      {
+                        "feature_type": "categorical",
+                        "column": "SUBDEPARTMENT"
+                      }
+                    ]
+                  },
+                  {
+                    "embedding_type": "feature",
+                    "name": "price_ic",
+                    "features": [
+                      {
+                        "feature_type": "numerical",
+                        "column": "REDUCED_PRICE",
+                        "normalize_by": "NORMAL_PRICE",
+                        "min_value": 0.25,
+                        "max_value": 1.05,
+                        "nan_replace": 1
+                      },
+                      {
+                        "feature_type": "numerical",
+                        "column": "DISCOUNT_PRICE_1",
+                        "normalize_by": "NORMAL_PRICE",
+                        "min_value": 0.25,
+                        "max_value": 1.05,
+                        "nan_replace": 1
+                      },
+                      {
+                        "feature_type": "numerical",
+                        "column": "CLEARANCE_PRICE",
+                        "normalize_by": "NORMAL_PRICE",
+                        "min_value": 0.25,
+                        "max_value": 1.05,
+                        "nan_replace": 1
+                      }
+                    ]
+                  },
+                  {
+                    "embedding_type": "seasonal",
+                    "name": "calendar_ic",
+                    "regularization": 0.2
+                  },
+                  {
+                    "embedding_type": "variance",
+                    "name": "variance"
+                  },
+                  {
+                    "embedding_type": "weather",
+                    "name": "weather_ic",
+                    "auxiliary_table_aliases": [
+                      "WEATHER"
+                    ]
+                  },
+                  {
+                    "embedding_type": "events",
+                    "name": "event_ic",
+                    "auxiliary_table_aliases": [
+                      "PHQ_EVENTS",
+                      "PHQ_EVENT_DETAILS"
+                    ],
+                    "event_model_config": {
+                      "phq_min_event_rank": 70,
+                      "protected_events": []
+                    }
+                  },
+                  {
+                    "embedding_type": "cannibalization",
+                    "name": "cannibal_ic",
+                    "cannibalization_config": {
+                      "group_columns": [
+                        "CLASS"
+                      ],
+                      "dimension_columns": [
+                        "ITEM"
+                      ],
+                      "feature": {
+                        "feature_type": "cannibalization_numerical",
+                        "column": "CURRENT_PRICE",
+                        "normalize_by": "NORMAL_PRICE"
+                      }
+                    }
+                  }
+                ],
+                "meta_connections": [
+                  {
+                    "primary_meta_embedding": "location_ic",
+                    "contribution_meta_embeddings": []
+                  },
+                  {
+                    "primary_meta_embedding": "product_ic",
+                    "contribution_meta_embeddings": [
+                      "location_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "price_ic",
+                    "contribution_meta_embeddings": [
+                      "product_ic",
+                      "location_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "calendar_ic",
+                    "contribution_meta_embeddings": [
+                      "product_ic",
+                      "location_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "variance",
+                    "contribution_meta_embeddings": [
+                      "location_ic",
+                      "product_ic",
+                      "price_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "weather_ic",
+                    "contribution_meta_embeddings": [
+                      "location_ic",
+                      "product_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "event_ic",
+                    "contribution_meta_embeddings": [
+                      "location_ic",
+                      "product_ic"
+                    ]
+                  },
+                  {
+                    "primary_meta_embedding": "cannibal_ic",
+                    "contribution_meta_embeddings": [
+                      "product_ic"
+                    ]
+                  }
+                ],
+                "training_config": {
+                  "epochs": null
+                },
+                "trend_correction_config": {
+                  "method": "exponential",
+                  "adaptivity_speed": 0.05,
+                  "max_horizon": 21
+                },
+                "data_cleansing_config": {
+                  "methods": [
+                    {
+                      "type": "assignment_correction",
+                      "id_groups": [
+                        [
+                          "ITEM"
+                        ],
+                        [
+                          "ITEM",
+                          "LOCATION"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "out_of_inventory_detection",
+                      "whole_period": {
+                        "start_of_period_inventory": "STOCKS_QUANTITY"
+                      }
+                    }
+                  ]
+                },
+                "selectable_feature_columns": null
+              }
+            }
+          ]
+        },
+        "explanationGroups": [
+          {
+            "name": "LOCATION",
+            "columns": [
+              "CHANNEL",
+              "BANNER",
+              "CITY",
+              "COUNTRY",
+              "LONGITUDE",
+              "FORMAT",
+              "TYPELOCATION",
+              "LATITUDE",
+              "OPEN_HOURS"
+            ]
+          },
+          {
+            "name": "PRODUCT",
+            "columns": [
+              "METAITEMID",
+              "SUBCLASS",
+              "ITEMCLASS",
+              "CLASS",
+              "STYLE",
+              "BRAND",
+              "ITEMSEASON",
+              "SUBDEPARTMENT"
+            ]
+          },
+          {
+            "name": "PRICE",
+            "columns": [
+              "NORMAL_PRICE",
+              "REDUCED_PRICE",
+              "DISCOUNT_PRICE_1",
+              "CLEARANCE_PRICE"
+            ]
+          },
+          {
+            "name": "CANNIBALIZATION",
+            "columns": [
+              "CURRENT_PRICE"
+            ]
+          }
+        ],
+        "constrainedTargetColumn": null,
+        "ignoreMarkerColumn": "IGNORE_SALE"
+      },
+      "batchPrediction": {
+        "predictionColumn": "SYSTEMIC_FORECAST",
+        "selectedModelColumn": "FCSTMODEL",
+        "ignoreMarkerColumn": "IGNORE_SALE",
+        "predictionEndTimestamp": "-365",
+        "predictionStartTimestamp": "current_date",
+        "varianceColumn": "PRED_VARIANCE",
+        "destination": {
+          "writeback": {
+            "operations": [
+              {
+                "sourceAlias": "predictions",
+                "destinationTable": "RAW_MGP_ITEM_LOCATION_DAILY_FORECASTS",
+                "columnMapping": {
+                  "columnMappingType": "explicit",
+                  "nameMapping": {
+                    "ITEM": "ITEM",
+                    "LOCATION": "LOCATION",
+                    "SYSTEMIC_FORECAST": "SYSTEMIC_FORECAST",
+                    "PRED_VARIANCE": "PRED_VARIANCE",
+                    "FCSTMODEL": "FCSTMODEL"
+                  },
+                  "const_columns": {
+                    "BATCH_ID": "resource_id"
+                  },
+                  "time_level_column": {
+                    "destination_column_name": "DAY",
+                    "source_column_name": "DAY"
+                  }
+                }
+              },
+              {
+                "sourceAlias": "predictions",
+                "destinationTable": "RAW_MGP_LDEEXPLAINABILITY",
+                "columnMapping": {
+                  "columnMappingType": "explicit",
+                  "nameMapping": {
+                    "ITEM": "ITEM",
+                    "LOCATION": "LOCATION",
+                    "CF1": "EXPLANATION_EVENTS",
+                    "CF2": "EXPLANATION_LEVEL",
+                    "CF3": "EXPLANATION_SEASONAL",
+                    "CF4": "EXPLANATION_TREND",
+                    "CF5": "EXPLANATION_WEATHER",
+                    "CF6": "EXPLANATION_GROUP_PRODUCT",
+                    "CF7": "EXPLANATION_GROUP_LOCATION",
+                    "CF8": "EXPLANATION_GROUP_PRICE",
+                    "CF10": "EXPLANATION_CANNIBALIZATION"
+                  },
+                  "const_columns": {
+                    "BATCH_ID": "resource_id"
+                  },
+                  "time_level_column": {
+                    "destination_column_name": "DAY",
+                    "source_column_name": "DAY"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "validationPayload": {
+        "measures": [
+          "SALES_QUANTITY",
+          "SYSTEMIC_FORECAST",
+          "IGNORE_SALE",
+          "ASSIGNMENT",
+          "",
+          "FCSTMODEL",
+          "IS_OPEN",
+          "PRED_VARIANCE",
+          "OPEN_HOURS",
+          "NORMAL_PRICE",
+          "REDUCED_PRICE",
+          "CLEARANCE_PRICE",
+          "DISCOUNT_PRICE_1",
+          "CURRENT_PRICE"
+        ],
+        "nodeProps": [
+          "",
+          ""
+        ],
+        "dimProps": [
+          "COUNTRY",
+          "CHANNEL",
+          "CITY",
+          "METALOCATIONID",
+          "BANNER",
+          "FORMAT",
+          "COUNTRYCODE",
+          "TYPELOCATION",
+          "SUBDEPARTMENT",
+          "CLASS",
+          "SUBCLASS",
+          "STYLE",
+          "METAITEMID",
+          "SALESCLASSIFICATION",
+          "ITEMSEASON",
+          "ITEMCLASS",
+          "ITEMSTYLE",
+          "SIZE",
+          "COLOURDESCRIPTION",
+          "BRAND",
+          "CONSUMERSEGMENT",
+          "QUALITY",
+          "MATERIAL",
+          "SUSTAINABILITY",
+          "ITEM",
+          "LOCATION"
+        ],
+        "dimensions": [
+          "CLASS",
+          "LOCATION"
+        ],
+        "nodes": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "historicalDataset": {
+        "metaIdColumns": null,
+        "source": {
+          "auxiliaryTables": []
+        },
+        "additionalDataSources": {
+          "sourceTypes": [
+            "events",
+            "weather"
+          ],
+          "idColumn": "LOCATION",
+          "longitudeColumn": "LONGITUDE",
+          "latitudeColumn": "LATITUDE",
+          "countryColumn": "COUNTRYCODE",
+          "countryColumnType": "ISO3"
+        }
+      },
+      "alias": {
+        "COUNTRY": "COUNTRY",
+        "CHANNEL": "CHANNEL",
+        "CITY": "CITY",
+        "METALOCATIONID": "METALOCATIONID",
+        "BANNER": "BANNER",
+        "FORMAT": "FORMAT",
+        "COUNTRYCODE": "COUNTRYCODE",
+        "TYPELOCATION": "TYPELOCATION",
+        "SUBDEPARTMENT": "SUBDEPARTMENT",
+        "CLASS": "CLASS",
+        "SUBCLASS": "SUBCLASS",
+        "STYLE": "STYLE",
+        "METAITEMID": "METAITEMID",
+        "SALESCLASSIFICATION": "SALESCLASSIFICATION",
+        "ITEMSEASON": "ITEMSEASON",
+        "ITEMCLASS": "ITEMCLASS",
+        "ITEMSTYLE": "ITEMSTYLE",
+        "SIZE": "SIZE",
+        "COLOURDESCRIPTION": "COLOURDESCRIPTION",
+        "BRAND": "BRAND",
+        "CONSUMERSEGMENT": "CONSUMERSEGMENT",
+        "QUALITY": "QUALITY",
+        "MATERIAL": "MATERIAL",
+        "SUSTAINABILITY": "SUSTAINABILITY"
+      }
+    },
+    "paramsData": {
+      "target": [
+        {
+          "name": "SALES_QUANTITY",
+          "aliasName": "SALES_QUANTITY"
+        }
+      ],
+      "output": [
+        {
+          "name": "SYSTEMIC_FORECAST",
+          "aliasName": "SYSTEMIC_FORECAST"
+        },
+        {
+          "name": "FCSTMODEL",
+          "aliasName": "FCSTMODEL"
+        },
+        {
+          "name": "PRED_VARIANCE",
+          "aliasName": "PRED_VARIANCE"
+        }
+      ],
+      "defaultValues": [
+        {
+          "name": "SALES_QUANTITY",
+          "defaultValue": 0
+        },
+        {
+          "name": "IGNORE_SALE",
+          "defaultValue": false
+        }
+      ],
+      "assignmentColumn": "ASSIGNMENT",
+      "effectivityColumn": "",
+      "openingHoursColumn": "IS_OPEN",
+      "dimensionOrder": [
+        "ITEM",
+        "LOCATION"
+      ],
+      "mixMatchModelData": {
+        "measures": [
+          "IGNORE_SALE",
+          "SALES_QUANTITY",
+          "OPEN_HOURS",
+          "CLEARANCE_PRICE",
+          "NORMAL_PRICE",
+          "REDUCED_PRICE",
+          "DISCOUNT_PRICE_1",
+          "CURRENT_PRICE",
+          "STOCKS_QUANTITY",
+          "PRED_MEAN"
+        ],
+        "levels": [
+          "SUBDEPARTMENT",
+          "CLASS",
+          "SUBCLASS",
+          "STYLE",
+          "ITEM",
+          "COUNTRY",
+          "CHANNEL",
+          "LOCATION"
+        ],
+        "properties": [
+          "BRAND",
+          "COLORID",
+          "CONSUMERSEGMENT",
+          "DESCRIPTIONITEM",
+          "ITEMCLASS",
+          "ITEMSEASON",
+          "ITEMSTYLE",
+          "METAITEMID",
+          "QUALITY",
+          "RANK",
+          "SIZE",
+          "COLOURDESCRIPTION",
+          "MATERIAL",
+          "SALESCLASSIFICATION",
+          "SUSTAINABILITY",
+          "BANNER",
+          "FORMAT",
+          "COUNTRYCODE",
+          "LATITUDE",
+          "LONGITUDE",
+          "CITY",
+          "METALOCATIONID",
+          "OPENDATE",
+          "TYPELOCATION"
+        ]
+      },
+      "cleanseProfiles": {
+        "Default": {
+          "cleanseOutlierFactor": 1.5,
+          "cleanseWindowSize": 4,
+          "lostSalesWindowSize": 4
+        }
+      },
+      "writeback": {
+        "modelStatistics": "",
+        "fittedHistory": "",
+        "modelExceptions": "",
+        "cleanseHistory": {
+          "quantity": "",
+          "overrideType": ""
+        },
+        "historyStartDate": "",
+        "adjHistStartDateCol": "",
+        "seasonalityProfiles": {
+          "node": "",
+          "measure": ""
+        },
+        "targetNodeWeightedMAProfileSelCol": "",
+        "weightedMANode": ""
+      }
+    }
+  },
+  "actorTypeMetaData": {},
+  "actorConfigMetaData": {},
+  "isHidden": null,
+  "softTimeOut": null,
+  "createdBy": "4f5ff381-b8a0-497f-80be-3ecb2f286ee7",
+  "lastModifiedBy": "4f5ff381-b8a0-497f-80be-3ecb2f286ee7",
+  "createdTimestamp": "2026-09-18T10:25:03.192883947",
+  "modifiedTimestamp": "2026-09-18T10:25:03.192879899"
+}
